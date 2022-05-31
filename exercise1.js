@@ -13,7 +13,7 @@
 // en el ejemplo. 
 //(Asegúrate de que has leído el resto de preguntas frecuentes antes de plantear tu solución)
 
-let number = 1236;
+let number = 3433;
 
 if (number > 0) {
     let numberStr = String(number);
@@ -21,6 +21,10 @@ if (number > 0) {
     let y = 0;
     array.forEach(x => y += parseInt(x));
     console.log('Se van a sumar los numeros ->', array.join(' + '), ' = ', y);
+
+    let a = array.reduce((acum, current) => parseInt(acum) + parseInt(current))
+    console.log('Se van a sumar los numeros ->', array.join(' + '), ' = ', a);
+
 } else {
     console.log('Ingrese un numero positivo');
 }
